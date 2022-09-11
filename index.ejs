@@ -16,7 +16,7 @@
             <p id="search-result-count" data-count="<%= words.length %>">Words found: <%= words.length %></p>
         <ul id="search-result" name="search-results">
             <% for(var i = 0; i < words.length; i++) { %>
-                <li><a id="<%= words[i] %>" rel="external help" href="https://www.google.com/search?q=define <%= words[i] %>" target="_blank"><%= words[i] %></a></li>
+                <li><%= words[i] %></li>
             <% } %>
             </ul>
         <% } %>
